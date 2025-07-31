@@ -48,7 +48,8 @@ public class HibernateConfig {
     hibernateProps.put(MultiTenancySettings.MULTI_TENANT_IDENTIFIER_RESOLVER,
         tenantIdentifierResolver);
 
-    return builder.dataSource(dataSource).packages("com.example.tenantmgmt.entity")
+    return builder.dataSource(dataSource)
+        .packages("com.sorushi.invoice.management.tenant_management.entity")
         .persistenceUnit("default").properties(hibernateProps).build();
   }
 
