@@ -3,6 +3,5 @@ updates:
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
-      interval: "daily"
-      time: "01:20"
-      timezone: "Asia/Kolkata"
+      interval: daily
+      time: "04:00"
